@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(to right, #ff4268d8 0%, #dc0000e9 100%), url(../image/hero-bg.jpg);
+    font-size: 20px;
+}
+
+.navImg {
+    margin-left: 70px;
+}
+
+.navbar h4 {
+    font-family: 'Carattere', cursive;
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px 270px 5px 0;
+}
+
+.navbar .nav-link {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s ease;
+}
+
+/* home content */
+.home-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.content img {
+    height: 90vh;
+    width: 50px;
+}
+
+.content h3 {
+    margin-left: 70px;
+    font-size: 50px;
+    text-shadow: 4px 3px 1px rgba(0, 0, 0, 0.334);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.content h3 span {
+    font-size: 40px;
+}
+
+.content p {
+    margin-left: 70px;
+    color: #212136;
+    font-size: 20px;
+}
+
+/* blog */
+#about {
+    margin-top: 50px;
+    font-size: 17px;
+}
+
+#about h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #0F0F0F;
+}
+
+/* product cards */
+.product-cards .card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 10px;
+}
+
+.product-cards h1 {
+    margin-top: 30px;
+    color: #0F0F0F;
+    font-weight: bold;
+}
+
+.product-cards h4 {
+    letter-spacing: 3px;
+    color: #0F0F0F;
+}
+
+.product-cards h5 span {
+    float: right;
+    color: #0F0F0F;
+    cursor: pointer;
+}
+
+.car-body p {
+    margin-bottom: 0;
+}
+
+.checked {
+    color: rgb(255, 187, 0);
+}
+
+.viewmorebtn {
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin: auto;
+    text-decoration: none;
+    margin-top: 30px;
+    width: 200px;
+    height: 32px;
+    color: #0F0F0F;
+    letter-spacing: 5px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid #0F0F0F;
+    transition: 0.5s ease;
+}
+
+.viewmorebtn:hover {
+    background-color: #0F0F0F;
+    color: rgb(139, 139, 139);
+}
+
+.description h3 {
+    color: #0F0F0F;
+    font-weight: bold;
+}
+
+/* contact */
+#contact {
+    margin-top: 50px;
+}
+
+#contact h1 {
+    color: #0F0F0F;
+    text-shadow: 0px 0px 1px black;
+}
+
+/* footer */
+.footer {
+    padding: 0 0 20px 0;
+    color: #ffffff;
+    font-size: 16px;
+    background: linear-gradient(to right, #ff4268d8 0%, #dc0000e9 100%), url(../image/hero-bg.jpg);
+}
+
+.footer .copyright {
+    text-align: center;
+    float: left;
+}
+
+.footer .social-media {
+    float: right;
+    text-align: center;
+}
+
+.social-media a {
+    color: #ffffff;
+}
+
+.social-media a:hover {
+    color: #0F0F0F;
+}
+
+/* footer */
+html {
+    scroll-behavior: smooth;
+}
+
+.arrow {
+    position: fixed;
+    background-color: #0F0F0F;
+    border-radius: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    align-items: center;
+    line-height: 50px;
+}
+
+
+/* responsive */
+@media screen and (max-width:550px) {
+    .home-section {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .content h3 {
+        margin-left: 20px;
+    }
+
+    .content p {
+        margin-left: 20px;
+    }
+
+    .content #shopnow {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* navbar */
+    .navbar h4 {
+        margin: 10px;
+    }
+
+    .navImg {
+        margin-left: 20px;
+    }
+
+    .navbar .nav-link {
+        margin: 0 20px;
+        font-size: 18px;
+    }
+
+    /* product */
+    .product-cards .card {
+        width: 95%;
+    }
+
+    .product-cards h1 {
+        margin-top: 15px;
+    }
+
+    .product-cards h4 {
+        font-size: 18px;
+    }
+
+    .product-cards h5 span {
+        font-size: 16px;
+    }
+
+    .viewmorebtn {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:799px) {
+    .home-section {
+        height: 150vh;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .content h3 {
+        margin-left: 50px;
+        font-size: 40px;
+    }
+
+    .content p {
+        margin-left: 50px;
+    }
+
+    .content #shopnow {
+        margin-left: 50px;
+    }
+}
+

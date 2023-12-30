@@ -34,7 +34,6 @@
 /* home content */
 .home-section {
     width: 100%;
-    height: 100vh;
     position: relative;
 }
 
@@ -82,21 +81,21 @@
     color: #0F0F0F;
 }
 
+#about p {
+    text-align: justify;
+}
+
 /* product cards */
 .product-cards .card {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     margin: 10px;
+    letter-spacing: 1px;
 }
 
 .product-cards h1 {
     margin-top: 30px;
     color: #0F0F0F;
     font-weight: bold;
-}
-
-.product-cards h4 {
-    letter-spacing: 3px;
-    color: #0F0F0F;
 }
 
 .product-cards h5 span {
@@ -136,8 +135,11 @@
 }
 
 .description h3 {
-    color: #0F0F0F;
     font-weight: bold;
+}
+
+.description p {
+    text-align: justify;
 }
 
 /* contact */
@@ -195,13 +197,38 @@ html {
 
 
 /* responsive */
-@media screen and (max-width:550px) {
-    .home-section {
-        height: 100vh;
+
+/* mobile */
+@media screen and (max-width: 470px) {
+    .carousel-item img {
+        object-fit: cover; 
+        height: 100%;
+        width: 100%; 
     }
+
+    .home .carousel {
+        margin-bottom: 0;
+    }
+
+    /* product */
+
+    .product-cards h4 {
+        font-size: 15px;
+    }
+
+    .product-cards .card-body p {
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (max-width:570px) {
+    .carousel-item img {
+        object-fit: cover; 
+        height: 100%;
+        width: 100%; 
+    }
+
     .content h3 {
         margin-left: 20px;
     }
@@ -230,17 +257,21 @@ html {
         font-size: 18px;
     }
 
-    /* product */
-    .product-cards .card {
-        width: 95%;
+    .carousel-item img {
+        object-fit: cover; 
+        height: 100%;
+        width: 100%; 
     }
 
-    .product-cards h1 {
-        margin-top: 15px;
+    /* product */
+    .product-cards .col-md-3 {
+        flex: 0 0 50%; 
+        max-width: 50%; 
+        justify-content: space-between;
     }
 
     .product-cards h4 {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     .product-cards h5 span {
@@ -254,12 +285,38 @@ html {
 }
 
 @media screen and (max-width:799px) {
-    .home-section {
-        height: 150vh;
+    .carousel-item img {
+        object-fit: cover; 
+        height: 100%;
+        width: 100%; 
+    }
+
+    .product-cards h4 {
+        font-size: 20px;
+    }
+    
+    .card p {
+        font-size: 15px;
     }
 }
 
 @media screen and (max-width:800px) {
+    .carousel-item img {
+        object-fit: cover; 
+        height: 100%;
+        width: 100%; 
+    }
+    
+    /* product */
+    .product-cards h4 {
+        font-size: 20px;
+    }
+    
+    .card p {
+        font-size: 15px;
+    }
+    
+    /*  */
     .content h3 {
         margin-left: 50px;
         font-size: 40px;

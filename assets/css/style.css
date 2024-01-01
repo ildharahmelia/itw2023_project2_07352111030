@@ -9,6 +9,7 @@
 .navbar {
     background: linear-gradient(to right, #ff4268d8 0%, #dc0000e9 100%), url(../image/hero-bg.jpg);
     font-size: 20px;
+    position: fixed;
 }
 
 .navImg {
@@ -17,7 +18,7 @@
 
 .navbar h4 {
     font-family: 'Carattere', cursive;
-    font-size: 35px;
+    font-size: 31px;
     color: #ffffff;
     text-align: center;
     margin: 10px 270px 5px 0;
@@ -30,6 +31,7 @@
     justify-content: space-between;
     transition: 0.5s ease;
 }
+
 
 /* home content */
 .home-section {
@@ -47,6 +49,7 @@
 }
 
 .content img {
+    margin-top: 60px;
     height: 90vh;
     width: 50px;
 }
@@ -76,6 +79,7 @@
 }
 
 #about h1 {
+    margin-top: 100px;
     text-align: center;
     font-weight: bold;
     color: #0F0F0F;
@@ -93,15 +97,9 @@
 }
 
 .product-cards h1 {
-    margin-top: 30px;
+    margin-top: 100px;
     color: #0F0F0F;
     font-weight: bold;
-}
-
-.product-cards h5 span {
-    float: right;
-    color: #0F0F0F;
-    cursor: pointer;
 }
 
 .car-body p {
@@ -131,7 +129,7 @@
 
 .viewmorebtn:hover {
     background-color: #0F0F0F;
-    color: rgb(139, 139, 139);
+    color: white;
 }
 
 .description h3 {
@@ -142,9 +140,12 @@
     text-align: justify;
 }
 
+.text-top {
+    margin-top: 100px;
+}
 /* contact */
 #contact {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 #contact h1 {
@@ -181,18 +182,6 @@
 /* footer */
 html {
     scroll-behavior: smooth;
-}
-
-.arrow {
-    position: fixed;
-    background-color: #0F0F0F;
-    border-radius: 50px;
-    height: 50px;
-    bottom: 40px;
-    right: 50px;
-    text-decoration: none;
-    align-items: center;
-    line-height: 50px;
 }
 
 
@@ -272,10 +261,6 @@ html {
 
     .product-cards h4 {
         font-size: 12px;
-    }
-
-    .product-cards h5 span {
-        font-size: 16px;
     }
 
     .viewmorebtn {

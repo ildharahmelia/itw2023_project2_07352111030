@@ -4170,15 +4170,15 @@ fieldset:disabled .btn {
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-    color: var(--bs-dropdown-link-hover-color);
-    background-color: var(--bs-dropdown-link-hover-bg)
+    color: #ffff;
+    background-color: #e43535e9;
 }
 
 .dropdown-item.active,
 .dropdown-item:active {
     color: var(--bs-dropdown-link-active-color);
     text-decoration: none;
-    background-color: var(--bs-dropdown-link-active-bg)
+    background-color: #e43535e9;
 }
 
 .dropdown-item.disabled,
@@ -4586,28 +4586,29 @@ fieldset:disabled .btn {
 .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
-    align-items: center
+    align-items: center;
 }
 
 .navbar-toggler {
     padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
     font-size: var(--bs-navbar-toggler-font-size);
     line-height: 1;
-    color: var(--bs-navbar-color);
+    color: #ffff;
     background-color: transparent;
-    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border: var(--bs-border-width) solid #ffff;
     border-radius: var(--bs-navbar-toggler-border-radius);
     transition: var(--bs-navbar-toggler-transition)
 }
 
 @media (prefers-reduced-motion:reduce) {
     .navbar-toggler {
-        transition: none
+        transition: none;
     }
 }
 
 .navbar-toggler:hover {
-    text-decoration: none
+    color: #ffff;
+    text-decoration: none;
 }
 
 .navbar-toggler:focus {
